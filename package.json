@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-ffprobe-static",
-  "version": "6.1.1-rc.3",
+  "version": "7.1.0-rc1",
   "description": "ffmpeg and ffprobe static binaries for Mac OSX, Linux, and Windows",
   "main": "index.js",
   "types": "index.d.ts",
@@ -17,12 +17,12 @@
     "prepublishOnly": "npm run lint && npm test"
   },
   "ffmpeg-static": {
-    "binary-release-tag": "b6.1.1-rc.3",
-    "binary-release-name": "6.1.1.rc.3"
+    "binary-release-tag": "b7.1.0",
+    "binary-release-name": "b7.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/descriptinc/ffmpeg-ffprobe-static"
+    "url": "https://github.com/alienartio/ffmpeg-ffprobe-static"
   },
   "keywords": [
     "ffmpeg",
@@ -43,7 +43,7 @@
   ],
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/descriptinc/ffmpeg-ffprobe-static/issues"
+    "url": "https://github.com/alienartio/ffmpeg-ffprobe-static/issues"
   },
   "engines": {
     "node": ">=10"

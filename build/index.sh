@@ -23,7 +23,7 @@ download () {
   else
     echo "  downloading $1"
     curl --connect-timeout 60 --retry 5 --retry-max-time 90 --retry-all-errors \
-       --silent -L -# --compressed -A 'https://github.com/descriptinc/ffmpeg-ffprobe-static' -o $2 $1
+       --silent -L -# --compressed -A 'https://github.com/alienartio/ffmpeg-ffprobe-static' -o $2 $1
   fi
 }
 
@@ -104,8 +104,8 @@ unzip -o -d ../bin -j ffmpeg-darwin-arm64.zip ffmpeg
 unzip -o -d ../bin -j ffprobe-darwin-arm64.zip ffprobe
 mv ../bin/ffmpeg ../bin/ffmpeg-darwin-arm64
 mv ../bin/ffprobe ../bin/ffprobe-darwin-arm64
-curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n6.1:/LICENSE.md'  -o ../bin/darwin-arm64.LICENSE
-curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n6.1:/README.md'  -o ../bin/darwin-arm64.README
+curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n7.1:/LICENSE.md'  -o ../bin/darwin-arm64.LICENSE
+curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n7.1:/README.md'  -o ../bin/darwin-arm64.README
 
 
 echo 'freebsd x64'
