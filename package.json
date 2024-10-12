@@ -1,5 +1,5 @@
 {
-  "name": "ffmpeg-ffprobe-static",
+  "name": "ffmpeg-ffprobe",
   "version": "7.1.0-rc1",
   "description": "ffmpeg and ffprobe static binaries for Mac OSX, Linux, and Windows",
   "main": "index.js",
