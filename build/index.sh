@@ -40,7 +40,7 @@ mv "$tmpdir/README.txt" ../bin/win32-x64.README
 
 echo 'windows ia32'
 echo '  downloading from github.com'
-download 'https://github.com/sudo-nautilus/FFmpeg-Builds-Win32/releases/download/latest/ffmpeg-n6.0-latest-win32-gpl-6.0.zip' win32-ia32.zip
+download 'https://github.com/defisym/FFmpeg-Builds-Win32/releases/download/latest/ffmpeg-n8.0-latest-win32-gpl-8.0.zip' win32-ia32.zip
 echo '  extracting'
 unzip -o -d ../bin -j win32-ia32.zip '*/bin/ffmpeg.exe' '*/bin/ffprobe.exe'
 mv ../bin/ffmpeg.exe ../bin/ffmpeg-win32-ia32
@@ -83,29 +83,29 @@ xzcat linux-arm64.tar.xz | $tar_exec -x --ignore-case --wildcards -O '**/GPLv3.t
 xzcat linux-arm64.tar.xz | $tar_exec -x --ignore-case --wildcards -O '**/readme.txt' >../bin/linux-arm64.README
 
 echo 'darwin x64'
-download 'https://www.osxexperts.net/ffmpeg61intel.zip' ffmpeg-darwin-x64.zip
+download 'https://www.osxexperts.net/ffmpeg80intel.zip' ffmpeg-darwin-x64.zip
 echo '  extracting'
 unzip -o -d ../bin -j ffmpeg-darwin-x64.zip ffmpeg
 mv ../bin/ffmpeg ../bin/ffmpeg-darwin-x64
 
-download 'https://www.osxexperts.net/ffprobe61intel.zip' ffprobe-darwin-x64.zip
+download 'https://www.osxexperts.net/ffprobe80intel.zip' ffprobe-darwin-x64.zip
 echo '  extracting'
 unzip -o -d ../bin -j ffprobe-darwin-x64.zip ffprobe
 mv ../bin/ffprobe ../bin/ffprobe-darwin-x64
-curl -s -L 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/HEAD:/README.md'  -o ../bin/darwin-x64.README
-curl -s -L 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/HEAD:/LICENSE.md'  -o ../bin/darwin-x64.LICENSE
+curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n8.0:/README.md'  -o ../bin/darwin-x64.README
+curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n8.0:/LICENSE.md'  -o ../bin/darwin-x64.LICENSE
 
 echo 'darwin arm64'
 echo '  downloading from osxexperts.net'
-download 'https://www.osxexperts.net/ffmpeg611arm.zip' ffmpeg-darwin-arm64.zip
-download 'https://www.osxexperts.net/ffprobe611arm.zip' ffprobe-darwin-arm64.zip
+download 'https://www.osxexperts.net/ffmpeg80arm.zip' ffmpeg-darwin-arm64.zip
+download 'https://www.osxexperts.net/ffprobe80arm.zip' ffprobe-darwin-arm64.zip
 echo '  extracting'
 unzip -o -d ../bin -j ffmpeg-darwin-arm64.zip ffmpeg
 unzip -o -d ../bin -j ffprobe-darwin-arm64.zip ffprobe
 mv ../bin/ffmpeg ../bin/ffmpeg-darwin-arm64
 mv ../bin/ffprobe ../bin/ffprobe-darwin-arm64
-curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n7.1:/LICENSE.md'  -o ../bin/darwin-arm64.LICENSE
-curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n7.1:/README.md'  -o ../bin/darwin-arm64.README
+curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n8.0:/LICENSE.md'  -o ../bin/darwin-arm64.LICENSE
+curl -fsSL 'https://git.ffmpeg.org/gitweb/ffmpeg.git/blob_plain/n8.0:/README.md'  -o ../bin/darwin-arm64.README
 
 
 echo 'freebsd x64'

@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-ffprobe",
-  "version": "7.1.0-rc1",
+  "version": "8.0.1",
   "description": "ffmpeg and ffprobe static binaries for Mac OSX, Linux, and Windows",
   "main": "index.js",
   "types": "index.d.ts",
@@ -17,8 +17,8 @@
     "prepublishOnly": "npm run lint && npm test"
   },
   "ffmpeg-static": {
-    "binary-release-tag": "b7.1.0",
-    "binary-release-name": "b7.1.0"
+    "binary-release-tag": "b8.0.1",
+    "binary-release-name": "b8.0.1"
   },
   "repository": {
     "type": "git",
